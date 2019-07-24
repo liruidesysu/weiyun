@@ -1,0 +1,776 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>12.终端管理 &mdash; 云晫云课堂 1.0 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="13.网关管理" href="Gateway Management.html" />
+    <link rel="prev" title="11.系统配置" href="System Configuration.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> 云晫云课堂
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">目录:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Cloud class.html">关于云晫云课堂</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Cloud class.html#id2">产品组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Cloud class.html#id3">技术术语</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Cloud class.html#id4">虚拟化</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Cloud class.html#id5">虚拟桌面（云桌面）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Cloud class.html#id6">镜像</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Cloud class.html#id7">课程</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Cloud class.html#id8">云课堂</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Cloud class.html#id9">共享存储账户</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Cloud class.html#id10">个人存储账户</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="home page.html">1.我的主页</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Resource profile.html">2.资源概况</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Monitoring management.html">3.监控管理</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Monitoring management.html#id2">3.1.资源监控</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Monitoring management.html#id3">3.1.1.服务器监控</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Monitoring management.html#id4">3.1.2.服务器重启</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Monitoring management.html#id5">3.1.3.服务器关闭</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Monitoring management.html#id6">3.1.4.课程监控</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Monitoring management.html#id7">3.1.5.桌面监控</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Monitoring management.html#id8">3.1.6.实时监控</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Monitoring management.html#id9">3.1.7.历史查询</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Monitoring management.html#id10">3.2.使用报告</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Monitoring management.html#id11">3.3.开课记录</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Monitoring management.html#id12">3.3.1.下载开课记录</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="User Management.html">4.用户管理</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="User Management.html#id2">4.1.管理员管理</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="User Management.html#id3">4.1.1.创建管理员</a></li>
+<li class="toctree-l3"><a class="reference internal" href="User Management.html#id4">4.1.2.单个删除管理员用户</a></li>
+<li class="toctree-l3"><a class="reference internal" href="User Management.html#id5">4.1.3.批量删除管理员用户</a></li>
+<li class="toctree-l3"><a class="reference internal" href="User Management.html#id6">4.1.4.修改管理员信息</a></li>
+<li class="toctree-l3"><a class="reference internal" href="User Management.html#id7">4.1.5.禁用某个管理员</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="User Management.html#id8">4.2.教师管理</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="User Management.html#id9">4.2.1.添加、删除、修改、激活操作</a></li>
+<li class="toctree-l3"><a class="reference internal" href="User Management.html#id10">4.2.2.批量导入教师</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="User Management.html#id11">4.3.学生管理</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="User Management.html#id12">4.3.1.添加、删除、修改、激活操作</a></li>
+<li class="toctree-l3"><a class="reference internal" href="User Management.html#id13">4.3.2.重置密码</a></li>
+<li class="toctree-l3"><a class="reference internal" href="User Management.html#id14">4.3.3.批量学生导入</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Course Management.html">5.课程管理</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Course Management.html#id2">5.1.添加课程</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Course Management.html#id3">5.1.1.课程基本信息</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Course Management.html#id4">5.1.2.添加上课时间</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Course Management.html#id5">5.1.3.添加学生名单</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Course Management.html#id6">5.1.4.创建过程中删除学生</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Course Management.html#id7">5.2.编辑课程</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Course Management.html#id8">5.2.1.修改基本信息</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Course Management.html#id9">5.2.2.修改课程成员</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Course Management.html#id10">5.2.3.课程桌面</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Course Management.html#id11">5.3.删除课程</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Course Management.html#id12">5.3.1.停止课程</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Course Management.html#id13">5.3.2.删除课程</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Course Management.html#id14">5.3.3.延长课程时间</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Desktop Management.html">6.桌面管理</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Desktop Management.html#id2">6.1.课程桌面</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Desktop Management.html#id3">6.1.1.绑定用户</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Desktop Management.html#id4">6.1.2.解绑用户</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Desktop Management.html#id5">6.1.3.删除桌面</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Desktop Management.html#id6">6.1.4.重启桌面</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Desktop Management.html#id7">6.1.5.还原桌面</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Desktop Management.html#id8">6.1.6.批量重启桌面</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Desktop Management.html#id9">6.1.7.批量还原桌面</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Desktop Management.html#id10">6.1.8.批量删除桌面</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Desktop Management.html#id11">6.2.固定桌面</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Desktop Management.html#id12">6.2.1.创建固定桌面</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Desktop Management.html#id13">6.2.2.编辑固定桌面</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Desktop Management.html#id14">6.2.3.调整固定桌面大小</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Desktop Management.html#id15">6.2.4.重启、还原、删除固定桌面</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Desktop Management.html#id16">6.2.5.关闭固定桌面</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Desktop Management.html#id17">6.2.6.启动固定桌面</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Desktop Management.html#id18">6.3.自由上机桌面</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Desktop Management.html#id19">6.3.1.开启/关闭自由上机桌面</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Desktop Management.html#id20">6.3.2.添加镜像方案</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Desktop Management.html#id21">6.3.3.删除镜像方案</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Desktop Management.html#id22">6.3.4.编辑镜像方案</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Desktop Management.html#id23">6.3.5.添加访问用户</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Desktop Management.html#id24">6.3.6.删除访问用户</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Desktop Management.html#id25">6.3.7.重启、还原、删除自由上机桌面</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Image management.html">7.镜像管理</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Image management.html#id2">7.1.镜像列表</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Image management.html#id3">7.1.1.编辑镜像</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Image management.html#id4">7.1.2.删除单个镜像</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Image management.html#id5">7.1.3.批量删除镜像</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Image management.html#id6">7.1.4.修改镜像账户密码</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Image management.html#id7">7.2.镜像制作</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Image management.html#id8">7.2.1.输入镜像基本信息</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Image management.html#id9">7.2.2.配置镜像</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Image management.html#id10">7.2.3.完成镜像配置</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Storage management.html">8.存储管理</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Storage management.html#id2">8.1.存储服务器</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Storage management.html#id3">8.1.1.创建存储服务器</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Storage management.html#id4">8.1.2.编辑存储服务器</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Storage management.html#id5">8.1.3.单个删除存储服务器</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Storage management.html#id6">8.1.4.批量删除存储服务器</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Storage management.html#id7">8.2.共享存储账户</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Storage management.html#id8">8.2.1.创建共享存储账户</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Storage management.html#id9">8.2.2.编辑共享存储账户</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Storage management.html#id10">8.2.3.单个删除共享存储账户</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Storage management.html#id11">8.2.4.批量删除共享存储账户</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Storage management.html#id12">8.3.个人存储账户</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Storage management.html#id13">8.3.1.创建个人存储账户</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Storage management.html#id14">8.3.2.编辑个人存储账户</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Storage management.html#id15">8.3.3.单个删除个人存储账户</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Storage management.html#id16">8.3.4.批量删除个人存储账户</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Storage management.html#ftp">8.4.外部FTP账户</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Storage management.html#id17">8.4.1.添加FTP账户</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Storage management.html#id18">8.4.2.编辑FTP账户</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Storage management.html#id19">8.4.3.删除FTP账户</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Network management.html">9.网络管理</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Network management.html#id2">9.1.网络拓扑</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Network management.html#ip">9.2.浮动IP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Network management.html#id3">9.3.安全组</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Task scheduling.html">10.任务调度</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Task scheduling.html#id2">10.1.任务概况</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Task scheduling.html#id3">10.1.1.重做所选任务</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Task scheduling.html#id4">10.1.2.重置所选任务</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Task scheduling.html#id5">10.1.3.删除所选任务</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="System Configuration.html">11.系统配置</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="System Configuration.html#id2">11.1.课程时间表</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="System Configuration.html#id3">11.1.1.编辑课程时间表</a></li>
+<li class="toctree-l3"><a class="reference internal" href="System Configuration.html#id4">11.1.2.添加时段</a></li>
+<li class="toctree-l3"><a class="reference internal" href="System Configuration.html#id5">11.1.3.删除选中时段</a></li>
+<li class="toctree-l3"><a class="reference internal" href="System Configuration.html#id6">11.1.4.重置课时</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="System Configuration.html#id7">11.2.校历</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="System Configuration.html#id8">11.2.1.添加校历</a></li>
+<li class="toctree-l3"><a class="reference internal" href="System Configuration.html#id9">11.2.2.删除校历</a></li>
+<li class="toctree-l3"><a class="reference internal" href="System Configuration.html#id10">11.2.3.课程调整-放假</a></li>
+<li class="toctree-l3"><a class="reference internal" href="System Configuration.html#id11">11.2.4.课程调整-补课</a></li>
+<li class="toctree-l3"><a class="reference internal" href="System Configuration.html#id12">11.2.5.课程调整-取消计划</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="System Configuration.html#id13">11.3.桌面配置</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="System Configuration.html#id14">11.3.1.创建桌面配置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="System Configuration.html#id15">11.3.2.编辑桌面配置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="System Configuration.html#id16">11.3.3.单个删除桌面配置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="System Configuration.html#id17">11.3.4.批量删除桌面配置</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="System Configuration.html#id18">11.4.系统参数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="System Configuration.html#id19">11.5.外设策略</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="System Configuration.html#id20">11.5.1.创建外设策略</a></li>
+<li class="toctree-l3"><a class="reference internal" href="System Configuration.html#id21">11.5.2.编辑外设策略</a></li>
+<li class="toctree-l3"><a class="reference internal" href="System Configuration.html#id22">11.5.3.单个删除外设策略</a></li>
+<li class="toctree-l3"><a class="reference internal" href="System Configuration.html#id23">11.5.4.批量删除外设策略</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="System Configuration.html#id24">11.6.下载管理</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="System Configuration.html#id25">11.6.1.上传安装包</a></li>
+<li class="toctree-l3"><a class="reference internal" href="System Configuration.html#id26">11.6.2.删除安装包</a></li>
+<li class="toctree-l3"><a class="reference internal" href="System Configuration.html#id27">11.6.3.修改安装包信息</a></li>
+<li class="toctree-l3"><a class="reference internal" href="System Configuration.html#id28">11.6.4.下载安装包</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="System Configuration.html#id29">11.7.应用黑名单</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="System Configuration.html#id30">11.7.1.创建黑名单</a></li>
+<li class="toctree-l3"><a class="reference internal" href="System Configuration.html#id31">11.7.2.编辑黑名单</a></li>
+<li class="toctree-l3"><a class="reference internal" href="System Configuration.html#id32">11.7.3.删除黑名单</a></li>
+<li class="toctree-l3"><a class="reference internal" href="System Configuration.html#id33">11.7.4.黑名单详情</a></li>
+<li class="toctree-l3"><a class="reference internal" href="System Configuration.html#id34">11.7.5.添加黑名单应用</a></li>
+<li class="toctree-l3"><a class="reference internal" href="System Configuration.html#id35">11.7.6.编辑黑名单应用</a></li>
+<li class="toctree-l3"><a class="reference internal" href="System Configuration.html#id36">11.7.7.删除黑名单应用</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="System Configuration.html#id37">11.8.服务器主机</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="System Configuration.html#id38">11.8.1.编辑服务器节点</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="System Configuration.html#id39">11.9.许可证</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">12.终端管理</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">12.1.课室/终端组</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">12.1.1.添加课室</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">12.1.2.删除课室</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">12.1.3.修改课室</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">12.1.4.锁定课室终端</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">12.1.5.解锁课室终端</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">12.1.6.课室关机</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">12.2.课室终端-图表显示</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id10">12.2.1.创建终端</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id11">12.2.2.删除选中终端</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id12">12.2.3.锁定终端</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id13">12.2.4.解锁终端</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id14">12.2.5.编辑终端</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id15">12.2.6.编辑终端行数、列数</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id16">12.3.课室终端-列表显示</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id17">12.3.1.创建、删除、锁定、解锁终端</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id18">12.3.2.编辑终端</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id19">12.4.终端注册</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id20">12.4.1.已注册</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id21">12.4.2.注册申请</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id22">12.4.3.已拒绝</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id23">12.5.融合计算</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id24">12.5.1.添加策略</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id25">12.5.2.删除策略</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id26">12.5.3.编辑策略</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id27">12.5.4.添加终端程序</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id28">12.5.5.删除终端程序</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id29">12.5.6.编辑终端程序</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Gateway Management.html">13.网关管理</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Gateway Management.html#id2">13.1.桌面网关</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Gateway Management.html#id3">13.1.1.添加网关</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Gateway Management.html#id4">13.1.2.删除网关</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Gateway Management.html#id5">13.1.3.编辑网关</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Gateway Management.html#id6">13.1.4.禁用网关</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Gateway Management.html#id7">13.1.5.激活网关</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Gateway Management.html#id8">13.2.内网网段</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Gateway Management.html#id9">13.2.1.添加网段</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Gateway Management.html#id10">13.2.2.删除网段</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Gateway Management.html#id11">13.2.3.编辑网段</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="System log.html">14.系统日志</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="System log.html#id2">14.1.用户操作日志</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="User Center.html">15.用户中心</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="User Center.html#id2">15.1.修改用户名、邮箱</a></li>
+<li class="toctree-l2"><a class="reference internal" href="User Center.html#id3">15.2.修改密码</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Migration management.html">16.迁移管理</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Migration management.html#id2">16.1.主机信息</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Migration management.html#id3">16.1.1.同步主机信息</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Migration management.html#id4">16.1.2.经某一主机变为备用主机</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Migration management.html#id5">16.1.3.查看主机详情</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Migration management.html#id6">16.1.4.云桌面迁移</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Migration management.html#id7">16.1.5.自定义迁移</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Migration management.html#id8">16.1.6.一键迁移</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Migration management.html#id9">16.2.桌面迁移</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Migration management.html#id10">16.2.1.单个桌面迁移</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Migration management.html#id11">16.2.2.批量迁移桌面</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Migration management.html#id12">16.2.3.批量重置桌面</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Migration management.html#id13">16.3.迁移调度</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Migration management.html#id14">16.3.1.重做所选任务</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Migration management.html#id15">16.3.2.重置所选任务</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Migration management.html#id16">16.3.3.删除所选任务</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Operation case.html">17.常见操作案例</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Operation case.html#id2">17.1.批量导入用户</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Operation case.html#id3">17.2.创建普通用户</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Operation case.html#id4">17.3.创建课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Operation case.html#id5">17.4.客户端下载</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Operation case.html#id6">17.5.在线网页帮助文档</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Exception handling.html">18.异常处理</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Exception handling.html#id2">18.1.批量导入用户失败</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Exception handling.html#id3">18.2.课程无法删除</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Exception handling.html#win10">18.3.Win10镜像制作问题</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">云晫云课堂</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>12.终端管理</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Terminal management.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>12.终端管理<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<blockquote>
+<div><p>云桌面1.7版本新增了终端管理功能，由于上课时学生相对固定，要求学生用学号和密码登陆不免繁琐，所以新增了终端管理功能。注册成功的终端可以在上课时直接启动对应课室的桌面，在该课室的学生可免用账号密码登陆。</p>
+<p>当课室的终端被管理员锁定时，学生将无法最小化和关闭客户端。</p>
+<p>管理员可通过一键关机来实现批量关闭课室的终端。</p>
+</div></blockquote>
+<div class="section" id="id2">
+<h2>12.1.课室/终端组<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<blockquote>
+<div><p><strong>“课室 / 终端组”</strong> 管理中，针对教育版主要是课室的管理，管理员在此页添加管理学校教室，通过教室将 <strong>课程——教室——终端（学校电脑）</strong> 联系起来，在该教室的终端可以在课程上课时候免用账号密码登陆。</p>
+<p>在 <strong>&lt;课室 / 终端组&gt;</strong> 页面中，可对课室进行添加、删除、修改、搜索操作，操作按钮分布参考图12-1-1.</p>
+<a class="reference internal image-reference" href="_images/zhongduan_1.png"><img alt="课室管理界面" class="align-center" src="_images/zhongduan_1.png" style="width: 680px;" /></a>
+<p>图12-1-1 课室管理界面</p>
+</div></blockquote>
+<div class="section" id="id3">
+<h3>12.1.1.添加课室<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>在 <strong>&lt;课程管理&gt;</strong> 页，点击 <strong>【添加课室】</strong> 按钮，在弹出的窗口中填写 <strong>课室名称</strong> 和 <strong>课室地址</strong>，点击 <strong>【添加】</strong> 按钮完成添加，如图12-1-2。</p>
+<a class="reference internal image-reference" href="_images/zhongduan_2.png"><img alt="添加课室窗口" class="align-center" src="_images/zhongduan_2.png" style="width: 450px;" /></a>
+<p>图12-1-2 添加课室窗口</p>
+</div></blockquote>
+</div>
+<div class="section" id="id4">
+<h3>12.1.2.删除课室<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div>在 <strong>&lt;课室管理&gt;</strong> 页，删除课室有两种方法，一种是通过搜索找到要删除的课室，在表格右侧的操作按钮中点击 <strong>【删除】</strong>，在弹出的 <strong>&lt;确认删除&gt;</strong> 窗口中点击 <strong>【确认】</strong> 可完成操作。另一种方法是通过表格前的复选框选中要删除的课室，点击表格左上方的 <strong>【删除所选课室】</strong> 按钮，在对话框中确认后可完成操作。</div></blockquote>
+</div>
+<div class="section" id="id5">
+<h3>12.1.3.修改课室<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>在表格右侧的操作按钮中点击 <strong>【编辑课室】</strong> 按钮，在弹出的对话框中可以修改信息，修改完成后点击 <strong>【修改】</strong> 按钮进行确认即可完成操作。如图12-1-3。</p>
+<a class="reference internal image-reference" href="_images/zhongduan_3.png"><img alt="编辑课室" class="align-center" src="_images/zhongduan_3.png" style="width: 450px;" /></a>
+<p>图12-1-3 编辑课室</p>
+</div></blockquote>
+</div>
+<div class="section" id="id6">
+<h3>12.1.4.锁定课室终端<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>在表格右侧的操作按钮中点击 <strong>【锁定课室终端】</strong> 按钮，在弹出的对话框中点击 <strong>【锁定】</strong> 按钮进行确认即可完成操作。如图12-1-4。</p>
+<a class="reference internal image-reference" href="_images/zhongduan_4.png"><img alt="锁定课室终端" class="align-center" src="_images/zhongduan_4.png" style="width: 280px;" /></a>
+<p>图12-1-4 锁定课室终端</p>
+</div></blockquote>
+</div>
+<div class="section" id="id7">
+<h3>12.1.5.解锁课室终端<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>在表格右侧的操作按钮中点击 <strong>【解锁课室终端】</strong> 按钮，在弹出的对话框中点击 <strong>【解锁】</strong> 按钮进行确认即可完成操作。如图12-1-5。</p>
+<a class="reference internal image-reference" href="_images/zhongduan_5.png"><img alt="解锁课室终端" class="align-center" src="_images/zhongduan_5.png" style="width: 280px;" /></a>
+<p>图12-1-5 解锁课室终端</p>
+</div></blockquote>
+</div>
+<div class="section" id="id8">
+<h3>12.1.6.课室关机<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>在表格右侧的操作按钮中点击 <strong>【课室关机】</strong> 按钮，在弹出的对话框中点击 <strong>【关机】</strong> 按钮进行确认即可完成操作。如图12-1-6。</p>
+<a class="reference internal image-reference" href="_images/zhongduan_6.png"><img alt="课室关机" class="align-center" src="_images/zhongduan_6.png" style="width: 280px;" /></a>
+<p>图12-1-6 课室关机</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="id9">
+<h2>12.2.课室终端-图表显示<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h2>
+<blockquote>
+<div><p>用户点击课室列表中的课室名称后，页面将跳转到该课室的已注册终端列表，首次打开默认选择图表显示。点击页面右上方的 <strong>【列表显示】</strong> 切换按钮，终端列表将显示为列表状态。</p>
+<p>在终端的图表页面中，未锁定的终端显示为 <strong>绿色</strong>，锁定的终端显示为 <strong>橙色</strong>，页面终端还会出现浅绿色和浅橙色。浅绿色代表终端与系统不一致（异常）的情况，此时终端未锁定，有可能是终端未开机或者终端出错无法执行系统的锁定命令等。浅橙色参考浅绿色的功能提示。当鼠标移上某一终端时，将出现该终端的描述，包括：<strong>座位号，Mac地址，系统状态，终端描述，状态更新时间</strong>。</p>
+<a class="reference internal image-reference" href="_images/zhongduan_7.png"><img alt="课室终端-图表显示" class="align-center" src="_images/zhongduan_7.png" style="width: 680px;" /></a>
+<p>图12-1-8 课室终端-图表显示</p>
+</div></blockquote>
+<div class="section" id="id10">
+<h3>12.2.1.创建终端<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>在课室终端图表的上方点击 <strong>【创建终端】</strong> 按钮，系统弹框 <strong>&lt;创建终端&gt;</strong>，填写座位号、MAC地址以及终端描述（可忽略），点击弹框中的 <strong>【添加】</strong> 按钮，即可完成创建终端操作。</p>
+<p><strong>注：创建终端等同于注册终端。</strong></p>
+<a class="reference internal image-reference" href="_images/zhongduan_8.png"><img alt="创建终端" class="align-center" src="_images/zhongduan_8.png" style="width: 400px;" /></a>
+<p>图12-2-1 创建终端</p>
+</div></blockquote>
+</div>
+<div class="section" id="id11">
+<h3>12.2.2.删除选中终端<a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>在终端图表页面，勾选需要删除的终端或点击 <strong>“全选”</strong> 选框，取消不删除的终端，点击页面左上方的 <strong>【删除选中终端】</strong> 按钮，系统弹框删除终端确认按钮，点击 <strong>【确认】</strong> 按钮，即可完成终端删除的操作。</p>
+<a class="reference internal image-reference" href="_images/zhongduan_9.png"><img alt="删除终端" class="align-center" src="_images/zhongduan_9.png" style="width: 300px;" /></a>
+<p>图12-2-2 删除终端</p>
+</div></blockquote>
+</div>
+<div class="section" id="id12">
+<h3>12.2.3.锁定终端<a class="headerlink" href="#id12" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>在终端图表页面，勾选需要锁定的终端或点击 <strong>“全选”</strong> 选框，取消已锁定的终端，点击页面左上方的 <strong>【锁定终端】</strong> 按钮，系统弹框锁定终端确认按钮，点击 <strong>【确认】</strong> 按钮，即可完成锁定终端的操作。</p>
+<a class="reference internal image-reference" href="_images/zhongduan_10.png"><img alt="锁定终端" class="align-center" src="_images/zhongduan_10.png" style="width: 300px;" /></a>
+<p>图12-2-3 锁定终端</p>
+</div></blockquote>
+</div>
+<div class="section" id="id13">
+<h3>12.2.4.解锁终端<a class="headerlink" href="#id13" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div>解锁终端和锁定终端操作相似，请参考12.2.3.锁定终端操作</div></blockquote>
+</div>
+<div class="section" id="id14">
+<h3>12.2.5.编辑终端<a class="headerlink" href="#id14" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>在终端图表页面中，双击某一台终端，页面弹框 <strong>&lt;编辑终端&gt;</strong>，修改需要编辑的信息，点击弹框中的 <strong>【确定】</strong> 按钮，即可完成编辑终端操作。</p>
+<a class="reference internal image-reference" href="_images/zhongduan_11.png"><img alt="编辑终端" class="align-center" src="_images/zhongduan_11.png" style="width: 400px;" /></a>
+<p>图12-2-4 编辑终端</p>
+</div></blockquote>
+</div>
+<div class="section" id="id15">
+<h3>12.2.6.编辑终端行数、列数<a class="headerlink" href="#id15" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>在终端图表的右上方，点击行数或列数，输入数字，点击对勾保存，页面终端将按设定的行数和列数排布。</p>
+<a class="reference internal image-reference" href="_images/zhongduan_12.png"><img alt="编辑终端行数、列数" class="align-center" src="_images/zhongduan_12.png" style="width: 680px;" /></a>
+<p>图12-2-5 编辑终端行数、列数</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="id16">
+<h2>12.3.课室终端-列表显示<a class="headerlink" href="#id16" title="永久链接至标题">¶</a></h2>
+<blockquote>
+<div><p>在终端图表页面的右上方，点击 <strong>【列表显示】</strong> 按钮，终端页面将以列表方式显示，终端列表页面将显示 <strong>座位号、MAC地址、终端描述、系统状态、终端状态、状态更新时间</strong> 以及 <strong>操作</strong> 按钮。</p>
+<p><strong>系统状态</strong> 是指系统对终端做出的锁定或者未锁定操作。<strong>终端状态</strong> 指的是终端反馈给系统，是否锁定。</p>
+<p>当系统状态与终端状态不一致时，页面将出现警示色，提示用户终端状态异常。</p>
+<a class="reference internal image-reference" href="_images/zhongduan_13.png"><img alt="课室终端-列表显示" class="align-center" src="_images/zhongduan_13.png" style="width: 680px;" /></a>
+<p>图12-3-1 课室终端-列表显示</p>
+</div></blockquote>
+<div class="section" id="id17">
+<h3>12.3.1.创建、删除、锁定、解锁终端<a class="headerlink" href="#id17" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div>终端列表页面的创建、删除、锁定以及解锁终端功能说明请参考12.2.课室终端-图表显示中的相关说明。</div></blockquote>
+</div>
+<div class="section" id="id18">
+<h3>12.3.2.编辑终端<a class="headerlink" href="#id18" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>在终端列表页面中，点击某一终端操作栏中的 <strong>【编辑】</strong> 按钮，系统弹框 <strong>&lt;编辑终端&gt;</strong>，编辑需要修改的信息，点击弹框中的 <strong>【确认】</strong> 按钮，即可完成编辑终端操作。</p>
+<a class="reference internal image-reference" href="_images/zhongduan_11.png"><img alt="编辑终端" class="align-center" src="_images/zhongduan_11.png" style="width: 400px;" /></a>
+<p>图12-3-2 编辑终端</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="id19">
+<h2>12.4.终端注册<a class="headerlink" href="#id19" title="永久链接至标题">¶</a></h2>
+<blockquote>
+<div>客户端安装完成后，可以点击终端注册，此时客户端会向系统发送一个注册请求，管理员在 <strong>&lt;终端注册&gt;</strong> 页会看到 <strong>新的注册申请、已注册的终端、已拒绝的终端申请</strong>。</div></blockquote>
+<div class="section" id="id20">
+<h3>12.4.1.已注册<a class="headerlink" href="#id20" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>已注册界面中可以看到所有的合法终端，这些终端的位置和课室中座位号一一对应。管理员在 <strong>&lt;终端注册-已注册&gt;</strong> 页可以创建终端，删除终端，操作按钮见图12-4-1。</p>
+<a class="reference internal image-reference" href="_images/zhongduan_14.png"><img alt="终端注册-已通过" class="align-center" src="_images/zhongduan_14.png" style="width: 640px;" /></a>
+<p>图12-4-1 终端注册-已通过</p>
+<p>管理员可以点击 <strong>【创建终端】</strong> 按钮，<strong>绑定终端、课室、座位号、MAC地址。</strong> 编辑完成后点击添加按钮完成添加操作。如图12-4-2。</p>
+<a class="reference internal image-reference" href="_images/zhongduan_15.png"><img alt="创建终端" class="align-center" src="_images/zhongduan_15.png" style="width: 400px;" /></a>
+<p>图12-4-2 创建终端</p>
+<p>管理员也可进行终端删除操作，可以进行单个终端的删除，也可以批量删除。</p>
+</div></blockquote>
+</div>
+<div class="section" id="id21">
+<h3>12.4.2.注册申请<a class="headerlink" href="#id21" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>所有客户端提交的还未通过的申请都在 <strong>&lt;注册申请&gt;</strong> 的页面中，管理员可在本页通过申请或者拒绝恶意申请。操作按钮分布请参考12-4-3。</p>
+<a class="reference internal image-reference" href="_images/zhongduan_16.png"><img alt="终端注册页面" class="align-center" src="_images/zhongduan_16.png" style="width: 640px;" /></a>
+<p>图12-4-3 终端注册页面</p>
+</div></blockquote>
+</div>
+<div class="section" id="id22">
+<h3>12.4.3.已拒绝<a class="headerlink" href="#id22" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div>对已经拒绝的终端注册，如果是错误拒绝管理员可以在 <strong>&lt;已拒绝&gt;</strong> 页中通过该申请，如果是正确拒绝的申请管理员可以在此页进行删除操作。</div></blockquote>
+</div>
+</div>
+<div class="section" id="id23">
+<h2>12.5.融合计算<a class="headerlink" href="#id23" title="永久链接至标题">¶</a></h2>
+<blockquote>
+<div><p>融合计算功能是为了综合利用云服务器和本地终端计算能力，通过融合计算，重量级应用可以通过映射在云桌面启动和使用，运行环境实为本地机，从而保证用户使用计算和图形密集型应用时有良好的体验。在 <strong>&lt;融合计算&gt;</strong> 界面中，包括 <strong>“策略列表”</strong> 和 <strong>“终端程序”</strong>。</p>
+<a class="reference internal image-reference" href="_images/zhongduan_17.png"><img alt="融合计算页面" class="align-center" src="_images/zhongduan_17.png" style="width: 680px;" /></a>
+<p>图12-5-1 融合计算页面</p>
+</div></blockquote>
+<div class="section" id="id24">
+<h3>12.5.1.添加策略<a class="headerlink" href="#id24" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>在 <strong>&lt;融合计算&gt;</strong> 的策略列表界面中，点击 <strong>【添加】</strong> 按钮，会弹出 <strong>&lt;创建计算策略&gt;</strong> 弹窗，输入策略的 <strong>“名称”</strong>，选择程序，点击弹窗的 <strong>【添加】</strong> 按钮，即可实现创建操作。如图12-5-2。</p>
+<a class="reference internal image-reference" href="_images/zhongduan_18.png"><img alt="添加策略" class="align-center" src="_images/zhongduan_18.png" style="width: 450px;" /></a>
+<p>图12-5-2 添加策略</p>
+</div></blockquote>
+</div>
+<div class="section" id="id25">
+<h3>12.5.2.删除策略<a class="headerlink" href="#id25" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>在 <strong>&lt;融合计算&gt;</strong> 的策略列表界面中，点击目标策略操作中的 <strong>【删除】</strong> 按钮，系统会弹出 <strong>&lt;删除策略&gt;</strong> 弹窗，点击弹窗的 <strong>【删除】</strong> 按钮，即可实现删除操作。如图12-5-3。批量删除操作可参考上述。</p>
+<a class="reference internal image-reference" href="_images/zhongduan_19.png"><img alt="删除策略" class="align-center" src="_images/zhongduan_19.png" style="width: 280px;" /></a>
+<p>图12-5-3 删除策略</p>
+</div></blockquote>
+</div>
+<div class="section" id="id26">
+<h3>12.5.3.编辑策略<a class="headerlink" href="#id26" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>在 <strong>&lt;融合计算&gt;</strong> 的策略列表界面中，点击目标策略操作中的 <strong>【编辑】</strong> 按钮，系统会弹出 <strong>&lt;编辑计算策略&gt;</strong> 弹窗，修改策略名称，更新已选程序，点击弹窗的 <strong>【更新】</strong> 按钮，即可实现编辑操作。</p>
+<a class="reference internal image-reference" href="_images/zhongduan_20.png"><img alt="编辑策略" class="align-center" src="_images/zhongduan_20.png" style="width: 450px;" /></a>
+<p>图12-5-4 编辑策略</p>
+</div></blockquote>
+</div>
+<div class="section" id="id27">
+<h3>12.5.4.添加终端程序<a class="headerlink" href="#id27" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>在 <strong>&lt;融合计算&gt;</strong> 的界面中，点击 <strong>“终端程序”</strong> 栏目，可以看到所有的终端程序列表，点击 <strong>&lt;终端程序&gt;</strong> 页面中的 <strong>【添加】</strong> 按钮，会弹出 <strong>&lt;创建终端程序&gt;</strong> 弹窗，输入程序的 <strong>“名称”</strong>，输入程序的安装路径，上传程序的图标（.ico格式），点击弹窗的 <strong>【更新】</strong> 按钮，即可实现创建操作。</p>
+<a class="reference internal image-reference" href="_images/zhongduan_21.png"><img alt="添加终端程序" class="align-center" src="_images/zhongduan_21.png" style="width: 450px;" /></a>
+<p>图12-5-5 添加终端程序</p>
+</div></blockquote>
+</div>
+<div class="section" id="id28">
+<h3>12.5.5.删除终端程序<a class="headerlink" href="#id28" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>在 <strong>&lt;终端程序&gt;</strong> 的界面中，点击目标程序操作中的 <strong>【删除】</strong> 按钮，系统会弹出 <strong>&lt;删除程序&gt;</strong> 弹窗，点击弹窗的 <strong>【删除】</strong> 按钮，即可实现删除操作。如图12-5-6。批量删除操作可参考上述。</p>
+<a class="reference internal image-reference" href="_images/zhongduan_22.png"><img alt="删除终端程序" class="align-center" src="_images/zhongduan_22.png" style="width: 280px;" /></a>
+<p>图12-5-6 删除终端程序</p>
+</div></blockquote>
+</div>
+<div class="section" id="id29">
+<h3>12.5.6.编辑终端程序<a class="headerlink" href="#id29" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>在 <strong>&lt;终端程序&gt;</strong> 的策略列表界面中，点击目标程序操作中的 <strong>【编辑】</strong> 按钮，系统会弹出 <strong>&lt;编辑终端程序&gt;</strong> 弹窗，修改程序的信息，点击弹窗的 <strong>【确定】</strong> 按钮，即可实现编辑操作。</p>
+<a class="reference internal image-reference" href="_images/zhongduan_23.png"><img alt="编辑终端程序" class="align-center" src="_images/zhongduan_23.png" style="width: 450px;" /></a>
+<p>图12-5-7 编辑终端程序</p>
+</div></blockquote>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Gateway Management.html" class="btn btn-neutral float-right" title="13.网关管理" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="System Configuration.html" class="btn btn-neutral" title="11.系统配置" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, 广州云晫信息科技有限公司.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            LANGUAGE:'zh_CN',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

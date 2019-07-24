@@ -1,0 +1,42 @@
+.. test documentation master file, created by
+   sphinx-quickstart on Fri May 11 18:27:16 2018.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+云晫云课堂 帮助文档
+================================
+:Release: |version|
+:Date: |today|
+
+.. toctree::
+   :maxdepth: 2
+   :caption: 目录:
+   
+   Cloud class
+   home page
+   Resource profile
+   Monitoring management
+   User Management
+   Course Management
+   Desktop Management
+   Image management
+   Storage management
+   Network management
+   Task scheduling
+   System Configuration
+   Terminal management
+   Gateway Management
+   System log
+   User Center
+   Migration management
+   Operation case
+   Exception handling
+
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

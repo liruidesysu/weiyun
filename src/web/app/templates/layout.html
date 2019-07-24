@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{%- block plugin_styles %}
+    {{ super() }}
+    <link href="{{ url_for('static', filename='css/datepicker.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/chosen.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap-editable.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap-datetimepicker.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap-timepicker.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/select2.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/jquery.gritter.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap-duallistbox.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/vinzor-common.css') }}" rel="stylesheet">
+{%- endblock %}
+
+{% block body_attribs %} class="no-skin"{% endblock %}
+
+
+{%- block sidebar %}
+    <div id="sidebar" class="sidebar responsive">
+        <script type="text/javascript">
+            try{ace.settings.check('sidebar' , 'fixed')}catch(e){}
+        </script>
+        <!-- sidebar menu -->
+        <ul class="nav nav-list">
+
+        </ul> <!-- /.nav-list -->
+
+        <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+            <i class="ace-icon fa fa-angle-double-left" id="sidebar-collapse-icon" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
+        </div>
+
+        <script type="text/javascript">
+            try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}
+        </script>
+    </div>
+{%- endblock %}
+
+{%- block main %}
+    <div class="main-content">
+        <div class="main-content-inner">
+            <div class="page-content">
+                {% block page_content %}
+                    <div class="page-header"><h1>Page header</h1></div>
+                {% endblock %}
+            </div> <!-- /.page-content -->
+        </div>
+    </div>
+{%- endblock %}
+
+{%- block footer %}
+    <div class="footer">
+        <div class="footer-inner">
+            <div class="footer-content">
+                <span class="bigger-120">
+                    <span class="blue bolder">Cloud Cluster</span>
+                </span>
+            </div>
+        </div>
+    </div>
+{%- endblock %}
+
+{%- block plugin_scripts %}
+    {{ super() }}
+    <script src="{{ url_for('static', filename='js/bootstrap-datepicker.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap-editable.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='i18n/bootstrap-datepicker.zh-CN.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.dataTables.bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/dataTables.tableTools.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/dataTables.colVis.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery-ui.custom.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.ui.touch-punch.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.easypiechart.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.sparkline.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.flot.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.flot.pie.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.flot.resize.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/chosen.jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap-editable.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/ace-editable.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/select2.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='i18n/select2.zh-CN.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.validate.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='i18n/jquery.validate.zh-CN.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/vinzor-validate.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.form.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.json.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/moment.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap-datetimepicker.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap-timepicker.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='i18n/bootstrap-datetimepicker.zh-CN.js') }}"></script>
+    <script src="{{ url_for('static', filename='i18n/ace-file-input.zh-CN.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.gritter.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.blockUI.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.bootstrap-duallistbox.min.js') }}"></script>
+{%- endblock %}
+
+

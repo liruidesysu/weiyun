@@ -1,0 +1,1 @@
+store zips of app icons and config files
