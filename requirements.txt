@@ -29,7 +29,7 @@ python-swiftclient==2.7.0
 futures==3.1.1
 
 # web
-Flask==0.10.1
+Flask==1.0
 Flask-Script==2.0.5
 Flask-Bootstrap==3.3.5.7
 Flask-Moment==0.5.1
