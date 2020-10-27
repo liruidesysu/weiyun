@@ -17,7 +17,7 @@ PyMySQL==0.7.0
 SQLAlchemy==1.2.2
 Alembic==0.8.4         # sqlalchemy migration
 
-cryptography==2.3.1
+cryptography==3.2
 
 # openstack
 python-keystoneclient==2.1.1
