@@ -5,7 +5,7 @@ oslo.config==4.8.0
 # security
 passlib==1.6.5
 pycrypto==2.6.1
-rsa==3.4.2
+rsa==4.1
 
 # time
 pytz==2015.7
