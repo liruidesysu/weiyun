@@ -51,7 +51,7 @@ oslo.messaging==5.27.0
 
 # task queue with rabbitmq
 #Celery==3.1.20
-Celery==4.0.2
+Celery==5.2.2
 
 # fix dependency issue for kombu, amqp, oslo_log
 kombu==4.0.2
