@@ -105,5 +105,5 @@ configparser==3.5.0
 # host power management
 pynacl==1.2.1
 bcrypt==3.1.4
-paramiko==2.4.2
+paramiko==2.10.1
 
